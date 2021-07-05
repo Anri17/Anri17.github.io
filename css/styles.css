@@ -51,26 +51,28 @@ p {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    top: 0;
-    position: fixed;
+    display: flex;
+    box-sizing: border-box;
     width: 100vw;
     background-color: black;
     padding: 1rem;
 }
 
 header .left-header {
+    flex: 1;
     display: flex;
     justify-content: left;
+    align-content: center;
 }
 
 header .left-header h1 {
     align-self: center;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
-header .left-header .social {
+header .left-header ul {
     display: flex;
     align-self: center;
     list-style-type: none;
@@ -78,31 +80,34 @@ header .left-header .social {
     margin: 0 0 0 1rem;
 }
 
-header .left-header .social li {
-    margin-left: 1rem;
-    font-size: 2rem;
+header .left-header ul li {
+    display: inline;
+    float: left;
 }
 
-header .right-header
-{
-    display: flex;
-    position: relative;
-    text-align: right;
-    justify-self: right;
-    align-self: center;
-    justify-content: right;
+header .left-header ul li a {
+    padding: 8px;
+}
+
+header .right-header {
+    flex: 1;
+}
+
+header .right-header ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-header .right-header li a {
-    margin: 0 0 0 1rem;
-    font-size: 2rem;
+header .right-header ul li {
+    float: right;
 }
 
-header .right-header li a {
-    margin: 0 0 0 2rem;
+header .right-header ul li a {
+    display: inline;
     font-size: 2rem;
+    margin: 0 2rem 0 0;
 }
 
 section {
@@ -136,4 +141,3 @@ section {
 img {
     width: 100%;
 }
-
