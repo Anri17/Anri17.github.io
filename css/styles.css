@@ -51,6 +51,8 @@ p {
 }
 
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     box-sizing: border-box;
     width: 100vw;
@@ -114,6 +116,11 @@ section {
     padding: 1rem;
     background-color: #E8E8E8;
     margin: 0 1rem 1rem 1rem;
+}
+
+.anchor {
+    position: relative;
+    top: -6rem;
 }
 
 .background {
