@@ -18,7 +18,7 @@
         <span id="top"></span>
         <header>
             <div class="left-header">
-                <h1><a href="#top">Anri17</a></h1>
+                <h1><a href="#top" onclick="scrollDown('#top')">Anri17</a></h1>
                 <ul>
                     <li><a href="mailto:andralmeida1999@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCWb8yfTLIkccFoX9Wqlyc1Q" target="_blank"><i class="fab fa-youtube"></i></a></li>
@@ -29,9 +29,9 @@
             <div class="right-header">
                 <ul>
                     <li>
-                        <a href="#about">About</a>
-                        <a href="#azur_project">Azur Project</a>
-                        <a href="#music">Music</a>
+                        <a href="#about" onclick="scrollDown('#about')">About</a>
+                        <a href="#azur_project" onclick="scrollDown('#azur_project')">Azur Project</a>
+                        <a href="#music" onclick="scrollDown('#music')">Music</a>
                     </li>
                 </ul>
             </div>
@@ -40,9 +40,9 @@
         <!-- BACKGROUND -->
     
         <main>
-            <section class="welcome">
+            <section id="scroll-down" class="welcome">
                 <h2>Welcome to Anri17's Website</h2>
-                <a href="#about">Scroll Down...</a>
+                <a href="#about" onclick="scrollDown('#about')"><span></span>Scroll</a>
             </section>
             <section>
                 <span class="anchor" id="about"></span>
