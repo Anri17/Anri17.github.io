@@ -8,24 +8,21 @@ p, h1, h2, h3, h4, h5, h6, a
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
+.hyperlink-text {
     text-decoration: none;
-}
-
-a {
     color: white;
     opacity: 50%;
 }
 
-a:active {
+.hyperlink-text:active {
     color: white;
 }
 
-a:visited {
+.hyperlink-text:visited {
     color: white;
 }
 
-a:hover {
+.hyperlink-text:hover {
     opacity: 100%;
 }
 
@@ -258,7 +255,6 @@ footer span {
     display: flex;
     justify-content: center;
     background-color: gray;
-    z-index: 2;
 }
 
 .bar {
@@ -307,4 +303,35 @@ input[name="r"]
 
 #r3:checked ~ .s1 {
     margin-left: -66.67%;      /* -100% * 2 / image number */
+}
+
+.img-link a {
+    text-decoration: none !important;
+    color: white !important;
+    opacity: 100%;
+}
+
+.img-link a :active {
+    color: white;
+}
+
+.img-link a:visited {
+    color: white;
+}
+
+.img-link a:hover {
+    opacity: 100%;
+}
+
+.drawing-card {
+    contain: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.drawing-card img {
+    flex: 0 1 auto;
+    width: auto;
+    max-height: 23rem;
+
 }
