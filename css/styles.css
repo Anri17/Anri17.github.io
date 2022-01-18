@@ -60,31 +60,31 @@ p {
 }
 
 header {
+    display: flex;
     position: fixed;
     top: 0;
-    display: flex;
     box-sizing: border-box;
     width: 100vw;
     background-color: black;
-    padding: 1rem;
-    z-index: 1;
+    padding: 0.5rem;
+    z-index: 2;
 }
 
-header .left-header {
+header .header-left {
     flex: 1;
     display: flex;
     justify-content: left;
     align-content: center;
 }
 
-header .left-header h1 {
+header .header-left h1 {
     align-self: center;
     color: white;
     padding: 0;
     margin: 0;
 }
 
-header .left-header ul {
+header .header-left ul {
     display: flex;
     align-self: center;
     list-style-type: none;
@@ -92,34 +92,37 @@ header .left-header ul {
     margin: 0 0 0 1rem;
 }
 
-header .left-header ul li {
+header .header-left ul li {
     display: inline;
     float: left;
 }
 
-header .left-header ul li a {
+header .header-left ul li a {
     padding: 8px;
 }
 
-header .right-header {
-    flex: 1;
+header .header-right {
+    display: flex;
 }
 
-header .right-header ul {
+header .header-right ul {
+    display: flex;
+    justify-content: right;
+    align-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-header .right-header ul li {
+header .header-right ul li {
     float: right;
+    margin: auto 1rem;
 }
 
-header .right-header ul li a {
-    display: inline;
-    font-size: 2rem;
-    margin: 0 2rem 0 0;
+header .header-right ul li a {
+    display: inline-block;
+    font-size: 1.5rem;
 }
 
 main {
@@ -141,11 +144,10 @@ section {
 
 .anchor {
     position: relative;
-    top: -6rem;
+    top: -5rem;
 }
 
 .background {
-
     position: fixed;
     background-image: url("../img/background.png");
     background-size: cover;
@@ -323,15 +325,48 @@ input[name="r"]
     opacity: 100%;
 }
 
-.drawing-card {
-    contain: flex;
-    padding: 0.5rem;
+.drawing-gallery
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+}
+
+.drawing-card a
+{
+    height: 0;
+    font-size: 0;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .drawing-card img {
-    flex: 0 1 auto;
     width: auto;
-    max-height: 23rem;
+    height: 23rem;
+}
 
+/* Music Section */
+.music-tracks
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding-top: 0.5rem;
+}
+
+.music-track-card
+{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.music-track-card audio
+{
+    padding: 0.5rem 0;
+    width: 100%;
+    justify-content: stretch;
 }
