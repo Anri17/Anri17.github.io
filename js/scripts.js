@@ -6,6 +6,6 @@ for (let i = 0; i < audioElements.length; i++) {
 }
 
 // Scroll down button
-function scrollDown(destination_id) {
+function scroll_down(destination_id) {
     $('html, body').animate({ scrollTop: $(destination_id).offset().top}, 500);
 }
