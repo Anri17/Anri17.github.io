@@ -1,0 +1,2 @@
+Add osu! stuff
+Add page for small javascript applets
