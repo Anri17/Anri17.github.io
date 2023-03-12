@@ -370,3 +370,27 @@ input[name="r"]
     width: 100%;
     justify-content: stretch;
 }
+
+
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: black;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
