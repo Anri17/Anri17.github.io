@@ -227,7 +227,7 @@ section {
 
 .arrow-down-icon {
     position: absolute;
-    bottom: 18px;
+    bottom: -18px;
     left: 50%;
     width: 18px;
     height: 18px;
