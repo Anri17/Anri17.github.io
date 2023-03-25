@@ -176,6 +176,13 @@ section {
     text-align: center;
 }
 
+.welcome h3 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
 .welcome a {
     position: absolute;
     bottom: 0;
