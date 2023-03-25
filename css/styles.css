@@ -190,7 +190,9 @@ section {
     color: #fff;
 }
 
-.welcome a span
+/* Draw Mouse Icon using Css */
+.mouse-icon
+.mouse-icon
 {
     position: absolute;
     top: 0;
@@ -203,7 +205,7 @@ section {
     box-sizing: border-box;
 }
 
-.welcome a span::before {
+.mouse-icon::before {
     position: absolute;
     top: 10px;
     left: 50%;
@@ -216,9 +218,9 @@ section {
     box-sizing: border-box;
   }
 
-.welcome a span::after {
+.arrow-down-icon {
     position: absolute;
-    bottom: -18px;
+    bottom: 18px;
     left: 50%;
     width: 18px;
     height: 18px;
