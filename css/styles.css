@@ -177,7 +177,7 @@ p {
 .header-title {
     color: white;
 }
-@media (max-width: 9300px) {
+@media (max-width: 930px) {
     .header-title {
         font-size: 4rem;
     }
