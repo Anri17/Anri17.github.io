@@ -21,22 +21,38 @@
     
     <nav class="navbar fixed-top" id="navbar">
         <div class="container">
-            <div class="navbar-left">
-                <h1 class="nav-brand" id="nav_brand"><a class="nav-link" onclick="scroll_down('#header')">André Luís</a></h1>
+            <div class="nav-top">
+                <div class="navbar-left">
+                    <h1 class="nav-brand" id="nav_brand"><a class="nav-link" onclick="scroll_down('#header')">André Luís</a></h1>
+                </div>
+                <div class="navbar-right">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="scroll_down('#about')">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="scroll_down('#projects')">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="scroll_down('#contactme')">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="nav-burger-button" id="nav_burger_button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
             </div>
-            <div class="navbar-right">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scroll_down('#about')">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scroll_down('#projects')">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scroll_down('#contactme')">Contact</a>
-                    </li>
-                </ul>
-            </div>  
+            <ul class="nav-burger-container" id="nav_burger_container">
+                <li class="nav-burger-item">
+                    <a class="nav-burger-link" onclick="scroll_down('#about')">About</a>
+                </li>
+                <li class="nav-burger-item">
+                    <a class="nav-burger-link" onclick="scroll_down('#projects')">Projects</a>
+                </li>
+                <li class="nav-burger-item">
+                    <a class="nav-burger-link" onclick="scroll_down('#contactme')">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -84,8 +100,6 @@
                 <span class="scroll-anchor" id="projects"></span>
                 <h2 class="section-title">Projects</h2>
                 <div class="card-container">
-
-
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Azur</h3>
