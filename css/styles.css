@@ -207,7 +207,6 @@ p {
     opacity: 100%;
 }
 .nav-burger-container {
-    display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: end;
