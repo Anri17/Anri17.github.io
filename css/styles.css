@@ -216,6 +216,7 @@ p {
     margin: 0;
     overflow: hidden;
     transition: 0.4s;
+    height: 0%; /* start at 0% , change to 100% when button is clicked */
     box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 930px) {
