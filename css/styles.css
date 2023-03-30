@@ -480,20 +480,20 @@ input[name="r"]
 
 
 
-/* Project cards */
+/* Cards */
 
-.project-container {
+.card-container {
     display: grid;
     column-gap: 1rem;
     row-gap: 1rem;
 }
 @media (min-width: 576px) {
-    .project-container {
+    .card-container {
         grid-template-columns: 1fr;
     }
 }
 @media (min-width: 992px) {
-    .project-container {
+    .card-container {
         grid-template-columns: 1fr 1fr;
     }
 }
