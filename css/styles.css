@@ -143,7 +143,7 @@ p {
     color: white;
     padding: 0;
     margin: 0;
-    font-size: 3.2rem;
+    /* font-size is set using javascript */
     margin-right: 1rem;
     transition: 0.2s;
 }
