@@ -16,7 +16,7 @@ const nav_burger_button = document.getElementById("nav_burger_button");
 let burger_is_active = false;
 
 window.onload = () => {
-
+    burger_is_active = false;
     if (burger_is_active) {
         nav_burger_container.style.height = "100%";
     } else {
