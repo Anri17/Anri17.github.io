@@ -9,3 +9,14 @@ for (let i = 0; i < audioElements.length; i++) {
 function scroll_down(destination_id) {
     $('html, body').animate({ scrollTop: $(destination_id).offset().top}, 500);
 }
+
+window.onscroll = () => {
+
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        document.getElementById("nav_brand").style.fontSize = "2rem";
+    } else {
+        document.getElementById("nav_brand").style.fontSize = "3.2rem";
+    }
+}
+
+

@@ -15,154 +15,326 @@
     <script src="js/scripts.js" defer></script>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="container">
-        <span id="top"></span>
-        <header>
-            <div class="header-left">
-                <h1><a class="hyperlink-text" onclick="scroll_down('#top')">Anri17</a></h1>
-                <ul>
-                    <li><a class="hyperlink-text" href="mailto:andralmeida1999@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-                    <li><a class="hyperlink-text" href="https://www.youtube.com/channel/UCWb8yfTLIkccFoX9Wqlyc1Q" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a class="hyperlink-text" href="https://github.com/Anri17" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a class="hyperlink-text" href="https://www.twitch.tv/anri17" target="_blank"><i class="fab fa-twitch"></i></a></li>
-                </ul>
+
+    <!-- BACKGROUND -->
+    <div class="background-header"></div>
+    <div class="background-overlay"></div>
+    
+    <nav class="navbar fixed-top" id="navbar">
+        <div class="container">
+            <div class="navbar-left">
+                <h1 class="nav-brand" id="nav_brand"><a class="nav-link" onclick="scroll_down('#header')">André Luís</a></h1>
             </div>
-            <nav class="header-right">
-                <ul>
-                    <li>
-                        <a class="hyperlink-text" href="smallapps.html">Small Apps</a>
+            <div class="navbar-right">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scroll_down('#about')">About</a>
                     </li>
-                    <li>
-                        <a class="hyperlink-text" onclick="scroll_down('#about')">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scroll_down('#projects')">Projects</a>
                     </li>
-                    <li>
-                        <a class="hyperlink-text" onclick="scroll_down('#azur_project')">Azur Project</a>
-                    </li>
-                    <li>
-                        <a class="hyperlink-text" onclick="scroll_down('#music')">Music</a>
-                    </li>
-                    <li>
-                        <a class="hyperlink-text" onclick="scroll_down('#drawings')">Drawings</a>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scroll_down('#contactme')">Contact</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-    
-        <!-- BACKGROUND -->
-    
-        <main>
-            <section class="welcome">
-                <span class="anchor" id="scroll-down"></span>
-                <h2>André Luís</h2>
-                <h3>Known online as "Anri17"</h3>
-                <a class="hyperlink-text" onclick="scroll_down('#about')">Scroll<span class="mouse-icon"><span class="arrow-down-icon"></span></span></a>
-            </section>
-            <section>
-                <span class="anchor" id="about"></span>
-                <h2>About me</h2>
-                <p>Hi, I'm André, and I'm a hobbyist game developer. I like to create prototypes in unity, but sometimes I also draw and compose music. I am currently working on the Azur Project.</p>
-            </section>
-            <section>
-                <span class="anchor" id="azur_project"></span>
-                <h2>Azur Project</h2>
-                <p>Azur is a game I made for a school project. The goal for this project was to make a minimum viable product for a SHMUP, and as such it only had two stages.</p>
-                <div class="slideshow-container">
-                    <div class="slideshow-slides">
-                        <input type="radio" name="r" id="r1" checked>
-                        <input type="radio" name="r" id="r2">
-                        <input type="radio" name="r" id="r3">
-                        <div class="slideshow-slide s1">
-                            <img src="img/InGame.jpg" alt="Azur Project In Game Image">
-                        </div>
-                        <div class="slideshow-slide">
-                            <img src="img/MainMenu.png" alt="Azur Project Main Menu">
-                        </div>
-                        <div class="slideshow-slide">
-                            <img src="img/MusicRoom.png" alt="Azur Project Music Room">
-                        </div>
+            </div>  
+        </div>
+    </nav>
+
+    <header class="header" id="header">
+        <div class="container">
+            <h1 class="header-title">André Luís</h1>
+            <h4 class="header-subtitle">Aspiring Software Developer</h4>
+            <div class="header-link-container">
+                <a class="header-link-icon hyperlink-icon" href="https://github.com/Anri17" class="header-link"><i class="fab fa-github"></i></a>
+                <a class="header-link-icon hyperlink-icon" href="https://www.linkedin.com/in/andr%C3%A9-almeida-63493119a/" class="header-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section about">
+            <div class="container">
+                <span class="scroll-anchor" id="about"></span>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="about-container">
+                    <div class="about-left">
+                        <div class="about-picture" alt="Picture of André Luís"></div>
+                        <p class="about-description">Hello, my name is André Luís and I'm a Software Developer. Started out learning the basics in school and have been self taught ever since.</p>
                     </div>
-                    <div class="slideshow-navigation">
-                        <label for="r1" class="bar"></label>
-                        <label for="r2" class="bar"></label>
-                        <label for="r3" class="bar"></label>
+                    <div class="about-right">
+                        <h3 class="about-title">Skills</h3>
+                        <span class="about-span">HTML • CSS • JavaScript</span>
+                        <span class="about-span">Git • GitHub</span>
+                        <span class="about-span">TypeScript • Angular</span>
+                        <span class="about-span">C# • Asp.Net • Unity</span>
+                        <span class="about-span">MongoDB • MySQl</span>
+                        <h3 class="about-title">Software</h3>
+                        <span class="about-span">Photoshop • Illustrator • Premiere</span>
+                        <span class="about-span">Clip Studio Paint</span>
+                        <span class="about-span">Microsoft Office</span>
                     </div>
                 </div>
-                <a class="hyperlink-text link" href="https://github.com/Anri17/shooter-pap/" target="_blank">Repository...</a>
-            </section>
-            <section>
-                <span  class="anchor" id="music"></span>
-                <h2>Music</h2>
-                <div class="music-tracks">
-                    <div class="music-track-card">
-                        <h3>Melodic Corridor</h3>
-                        <audio controls controlsList="nodownload">
-                            <source src="audio/Melodic Corridor.ogg" type="audio/ogg">
-                            If you're seeing this text, then it means that your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="music-track-card">
-                        <h3>Morning Star</h3>
-                        <audio controls controlsList="nodownload">
-                            <source src="audio/Morning Star.ogg" type="audio/ogg">
-                            If you're seeing this text, then it means that your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="music-track-card">
-                        <h3>Mountain Climb</h3>
-                        <audio controls controlsList="nodownload">
-                            <source src="audio/Mountain Climb.ogg" type="audio/ogg">
-                            If you're seeing this text, then it means that your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="music-track-card">
-                        <h3>Cold Fire</h3>
-                        <audio controls controlsList="nodownload">
-                            <source src="audio/Cold Fire.ogg" type="audio/ogg">
-                            If you're seeing this text, then it means that your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="music-track-card">
-                        <h3>Sparking Sunflower</h3>
-                        <audio controls controlsList="nodownload">
-                            <source src="audio/Sparking Sunflower.ogg" type="audio/ogg">
-                            If you're seeing this text, then it means that your browser does not support the audio element.
-                        </audio>
+            </div>
+        </section>
+
+        <div class="background-about"></div>
+
+        <section class="section project">
+            <div class="container">
+                <span class="scroll-anchor" id="projects"></span>
+                <h2 class="section-title">Projects</h2>
+                <div class="project-container">
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Azur</h3>
+                        </div>
+                        <div class="card-main">
+                            <p>A top down vertical shooter video game.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-link-container">
+                                <a class="hyperlink-text" href="https://github.com/Anri17/azur-shmup" target="_blank">Repository</a>                            
+                            </div>
+                            <div class="card-tech">
+                                C# • Unity
+                            </div>
+                        </div>
                     </div>
 
+
+
+<!--
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Dischat</h3>
+                        </div>
+                        <div class="card-main">
+                            <p>A chat application I made during an internship.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-link-container">
+                                <a class="hyperlink-text" href="">Website</a>
+                                <a class="hyperlink-text" href="">Repository</a>                            
+                            </div>
+                            <div class="card-tech">
+                                NodeJS • Express • Socket.IO
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <h3>Blog</h3>                            
+                            </div>
+                            <div class="card-header-right">
+                                <a href="">Website</a>
+                                <a href="">Repository</a>                            
+                            </div>
+                        </div>
+                        <div class="card-main">
+                            <p>TODO</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-left">
+                                <a href="">Read Mode...</a>
+                            </div>
+                            <div class="card-footer-right">
+                                TBD
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <h3>Bug Tracker</h3>                            
+                            </div>
+                            <div class="card-header-right">
+                                <a href="">Website</a>
+                                <a href="">Repository</a>                            
+                            </div>
+                        </div>
+                        <div class="card-main">
+                            <p>TODO</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-left">
+                                <a href="">Read Mode...</a>
+                            </div>
+                            <div class="card-footer-right">
+                                TBD
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <h3>FizzBuzz</h3>                            
+                            </div>
+                            <div class="card-header-right">
+                                <a href="">Website</a>
+                                <a href="">Repository</a>                            
+                            </div>
+                        </div>
+                        <div class="card-main">
+                            <p>1, 2, Fizz, 4, Buzz, Fizz</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-left">
+                                <a href="">Read Mode...</a>
+                            </div>
+                            <div class="card-footer-right">
+                                JavaScript
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <h3>Todo List</h3>                            
+                            </div>
+                            <div class="card-header-right">
+                                <a href="">Website</a>
+                                <a href="">Repository</a>                            
+                            </div>
+                        </div>
+                        <div class="card-main">
+                            <p>A simple Todo List solution for simple tasks.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-left">
+                                <a href="">Read Mode...</a>
+                            </div>
+                            <div class="card-footer-right">
+                                TypeScript
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <h3>Simple Chat</h3>                            
+                            </div>
+                            <div class="card-header-right">
+                                <a href="">Website</a>
+                                <a href="">Repository</a>                            
+                            </div>
+                        </div>
+                        <div class="card-main">
+                            <p>Just provide a username and start chatting with others.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-left">
+                                <a href="">Read Mode...</a>
+                            </div>
+                            <div class="card-footer-right">
+                                NodeJS • Express • Socket.IO
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <h3>Firely Simulator</h3>                            
+                            </div>
+                            <div class="card-header-right">
+                                <a href="">Website</a>
+                                <a href="">Repository</a>                            
+                            </div>
+                        </div>
+                        <div class="card-main">
+                            <p>A firefly simulator I made in unity.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-left">
+                                <a href="">Read Mode...</a>
+                            </div>
+                            <div class="card-footer-right">
+                                C# • Unity
+                            </div>
+                        </div>
+                    </div>
+
+
+-->
                 </div>
-            </section>
-            <section>
-                <span  class="anchor" id="drawings"></span>
-                <h2>Drawings</h2>
-                <div class="drawing-gallery">
-                    <div class="drawing-card">
-                        <a target="_blank" class="img-link" href="https://www.pixiv.net/en/artworks/89179237"><img src="img\drawings\89179237_p0.png" alt=""></a>
+            </div>
+        </section>
+        
+        <div class="background-project"></div>
+
+        <section class="section contact">
+            <div class="container">
+                <span class="scroll-anchor" id="contactme"></span>
+                <h2 class="section-title">Contact Me</h2>
+                <form class="form" action="">
+                    <input class="form-text" type="email" placeholder="Email">
+                    <input class="form-text" type="text" placeholder="Subject">
+                    <textarea class="form-textarea" placeholder="Message"></textarea>
+                    <input class="form-btn form-align-right btn-submit " type="submit">
+                </form>
+            </div>
+        </section>
+
+        <div class="background-contact"></div>
+
+        <section class="project-modal">
+                
+            <p>Azur is a game I made for a school project. The goal for this project was to make a minimum viable product for a SHMUP, and as such it only had two stages.</p>
+            <div class="slideshow-container">
+                <div class="slideshow-slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <div class="slideshow-slide s1">
+                        <img src="img/InGame.jpg" alt="Azur Project In Game Image">
                     </div>
-                    <div class="drawing-card">
-                        <a target="_blank" class="img-link" href="https://www.pixiv.net/en/artworks/85287784"><img src="img\drawings\85287784_p0.png" alt=""></a>
+                    <div class="slideshow-slide">
+                        <img src="img/MainMenu.png" alt="Azur Project Main Menu">
                     </div>
-                    <div class="drawing-card">
-                        <a target="_blank" class="img-link" href="https://www.pixiv.net/en/artworks/85159456"><img src="img\drawings\85159456_p0.png" alt=""></a>
-                    </div>
-                    <div class="drawing-card">
-                        <a target="_blank" class="img-link" href="https://www.pixiv.net/en/artworks/84616477"><img src="img\drawings\84616477_p0.png" alt=""></a>
-                    </div>
-                    <div class="drawing-card">
-                        <a target="_blank" class="img-link" href="https://www.pixiv.net/en/artworks/76802385"><img src="img\drawings\76802385_p0.png" alt=""></a>
-                    </div>
-                    <div class="drawing-card">
-                        <a target="_blank" class="img-link" href="https://www.pixiv.net/en/artworks/73928011"><img src="img\drawings\73928011_p0.png" alt=""></a>
-                    </div>
-                    <div class="drawing-card">
-                        <!--a target="" class="img-link" href=""--><img src="img\drawings\Ryuuko01.png" alt="">
+                    <div class="slideshow-slide">
+                        <img src="img/MusicRoom.png" alt="Azur Project Music Room">
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <span>Copyright &copy; 2021 Anri17, All Rights Reserved</span>
-        </footer>
-    </div>
+                <div class="slideshow-navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                </div>
+            </div>
+
+        
+
+            <a class="hyperlink-text link" href="https://github.com/Anri17/shooter-pap/" target="_blank">Repository...</a>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="color: white;">&copy; 2023 André Luís Almeida</div>
+            <div style="color: white;">Email: andralmeida1999@gmail.com</div>
+        </div>
+    </footer>
 </body>
 </html>
