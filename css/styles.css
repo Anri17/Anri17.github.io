@@ -492,26 +492,12 @@ input[name="r"]
         grid-template-columns: 1fr;
     }
 }
-@media (min-width: 768px) {
-    .project-container {
-        grid-template-columns: 1fr;
-    }
-}
 @media (min-width: 992px) {
     .project-container {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width: 1200px) {
-    .project-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media (min-width: 1400px) {
-    .project-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+
 .card {
     display: flex;
     flex-direction: column;
