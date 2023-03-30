@@ -47,13 +47,13 @@ nav_burger_button.onclick = () => {
 function navbar_title_resize()
 {
     // define size_max based on window width
-    if (document.body.clientWidth > 630) {
+    if (document.body.clientWidth > 930) {
         navbar_title_size_min = "2rem";
         navbar_title_size_max = "3.5rem";
     }
     else {
         navbar_title_size_min = "1.8rem";
-        navbar_title_size_max = "1.8rem";
+        navbar_title_size_max = "2.5rem";
     }
     // change font size
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
